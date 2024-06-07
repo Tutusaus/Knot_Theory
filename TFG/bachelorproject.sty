@@ -1,0 +1,119 @@
+% NOTE: You should not have to change anything in this file!
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bachelorproject}[2019/07/30 Bachelor Thesis Template]
+\RequirePackage[english]{babel}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{comment}
+\RequirePackage{float}
+\RequirePackage{caption}
+\RequirePackage{color}
+\RequirePackage{algorithmic}
+\RequirePackage{algorithm}
+\RequirePackage{multirow}
+\RequirePackage{bold-extra}
+\RequirePackage{fancyhdr}
+\RequirePackage{siunitx}
+\RequirePackage[runin]{abstract}
+\RequirePackage[round,longnamesfirst]{natbib}
+\RequirePackage{appendix}
+\RequirePackage{titling}
+\RequirePackage{textcomp}
+\RequirePackage{booktabs}
+\RequirePackage{microtype}
+\RequirePackage{tikz}
+\RequirePackage[margin=25mm,headsep=-3mm,headheight=2cm]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage[pdfborder={0 0 0},pdfusetitle]{hyperref}
+\RequirePackage{doi}
+
+\DeclareOption*{\PackageWarning{examplepackage}{Unknown ‘\CurrentOption’}}
+\ProcessOptions\relax
+
+% change title font and add \supervisors command
+\pretitle{\begin{center}\LARGE\bfseries\scshape}
+\posttitle{\par\vspace{1ex}\normalfont\normalsize{Treball de Final de Grau}\par\end{center}}
+\preauthor{\begin{center} \normalsize \lineskip 0.5em \begin{tabular}[t]{c}}
+\newcommand{\supervisors}[1]{\gdef\superVis{#1}}
+\newcommand{\superVis}{}
+\postauthor{\\ Supervisor: \superVis \end{tabular}\par\end{center}}
+
+\DeclareCaptionFont{bold}{\bfseries}
+\DeclareCaptionFont{normal}{\color{black}}
+\captionsetup{font=small,labelfont=bf,textfont=bf}
+
+% Abstract configuration
+\setlength{\abstitleskip}{-\parindent} % make abstract flushleft
+\setlength{\absleftindent}{6mm} % make abstract non-indented
+\setlength{\absrightindent}{6mm}
+% adjust the next two commands to set the size/weight you need
+\setlength{\absparindent}{6mm}
+\abslabeldelim{:} % add a colon to the abstract title
+\renewcommand{\abstractnamefont}{\normalfont\normalsize\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont\normalsize}
+
+% Header configuration
+\renewcommand{\headrulewidth}{0pt} % remove hline
+% first page
+\fancypagestyle{firststyle}{%
+  \fancyhead{}
+  \fancyhead[L]{\hspace*{-7mm}\includegraphics[height=18mm]{img/Decoració portada.pdf}}
+  \fancyfoot[R]{\thepage}
+}
+% all other pages
+\fancypagestyle{myfancy}{%
+  \fancyhead{} % remove default contents
+  \fancyfoot{} % remove default contents
+  \fancyfoot[R]{\thepage}
+}
+\pagestyle{myfancy}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\setlength{\columnsep}{2\columnsep}
+
+% enumerate equations and algorithms not just 1, 2, ...,N but SectionNr.EquationNr
+\numberwithin{equation}{section}
+\numberwithin{algorithm}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+\date{\vspace{-5ex}} % do not add a date
+
+\usetikzlibrary{
+  knots,
+  hobby,
+  decorations.pathreplacing,
+  shapes.geometric,
+  calc
+}
+
+\tikzset{
+  knot diagram/every strand/.append style={
+  },
+  show curve controls/.style={
+    postaction=decorate,
+    decoration={show path construction,
+      curveto code={
+        \draw [blue, dashed]
+        (\tikzinputsegmentfirst) -- (\tikzinputsegmentsupporta)
+        node [at end, draw, solid, red, inner sep=2pt]{};
+        \draw [blue, dashed]
+        (\tikzinputsegmentsupportb) -- (\tikzinputsegmentlast)
+        node [at start, draw, solid, red, inner sep=2pt]{}
+        node [at end, fill, blue, ellipse, inner sep=2pt]{}
+        ;
+      }
+    }
+  },
+  show curve endpoints/.style={
+    postaction=decorate,
+    decoration={show path construction,
+      curveto code={
+        \node [fill, blue, ellipse, inner sep=2pt] at (\tikzinputsegmentlast) {}
+        ;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introducció}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Sobre els nusos}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Algunes definicions i els objectius de la teoria de nusos}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Equivalència entre nusos}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Representació d'un nus en matemàtiques}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Els moviments de Reidemeister}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Moviments de Reidemeister}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}El teorema central de la Teoria de Nusos}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Algunes propietats sobre nusos}{4}{section.4}%
+\contentsline {section}{\numberline {5}El polinomi de Jones}{4}{section.5}%
+\contentsline {section}{\numberline {6}Aplicacions}{4}{section.6}%
+\contentsline {section}{\numberline {A}Appendix}{5}{appendix.a.A}%
+\contentsline {section}{\numberline {B}Appendices}{5}{appendix.a.B}%

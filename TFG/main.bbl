@@ -1,0 +1,54 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Collins}(2006)]{computingwithquantumknots}
+Graham~P. {Collins}.
+\newblock {Computing with Quantum Knots}.
+\newblock \emph{Scientific American}, 294\penalty0 (4):\penalty0 56--63, apr
+  2006.
+\newblock \doi{10.1038/scientificamerican0406-56}.
+
+\bibitem[Jones(1985)]{jonesoriginal}
+Vaughan F.~R. Jones.
+\newblock {A polynomial invariant for knots via von Neumann algebras}.
+\newblock \emph{Bulletin (New Series) of the American Mathematical Society},
+  12\penalty0 (1):\penalty0 103 -- 111, 1985.
+
+\bibitem[Kauffman and Lambropoulou(2007)]{culpritknot}
+L~Kauffman and S~Lambropoulou.
+\newblock Unknots and dna.
+\newblock \emph{Current Developments in Mathematical Biology}, 38:\penalty0
+  39--68, 2007.
+
+\bibitem[Reidemeister(2013)]{knotentheorie}
+Kurt Reidemeister.
+\newblock \emph{Knotentheorie}, volume~1.
+\newblock Springer-Verlag, 2013.
+
+\bibitem[Silver(2006)]{knottheory}
+Daniel~S. Silver.
+\newblock Knot theory's odd origins: The modern study of knots grew out an
+  attempt by three 19th-century scottish physicists to apply knot theory to
+  fundamental questions about the universe.
+\newblock \emph{American Scientist}, 94\penalty0 (2):\penalty0 158--165, 2006.
+\newblock ISSN 00030996.
+\newblock URL \url{http://www.jstor.org/stable/27858741}.
+
+\bibitem[{Sosinski{\u\i}}(2002)]{mathwithatwist}
+A.B. {Sosinski{\u\i}}.
+\newblock \emph{Knots: Mathematics with a Twist}.
+\newblock Harvard University Press, 2002.
+\newblock ISBN 9780674009448.
+\newblock URL \url{https://books.google.es/books?id=BewrZeACVKcC}.
+
+\bibitem[Trace(1983)]{SobreelsmovdeReide}
+Bruce Trace.
+\newblock On the reidemeister moves of a classical knot.
+\newblock \emph{Proceedings of the American Mathematical Society}, 89\penalty0
+  (4):\penalty0 722--724, 1983.
+
+\end{thebibliography}

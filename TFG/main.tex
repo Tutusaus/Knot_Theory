@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage{bachelorproject}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+\usepackage{lmodern}
+\usepackage{footmisc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathabx}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+
+\usetikzlibrary{shapes,snakes}
+
+\newcommand{\KP}[1]{%
+	\begin{tikzpicture}[baseline=-\dimexpr\fontdimen22\textfont2\relax]
+		#1
+	\end{tikzpicture}%
+}
+\newcommand{\KPA}{%
+	\KP{\filldraw[color=gray, fill=none, thick] circle (0.3);}%
+}
+\newcommand{\KPB}{%
+	\KP{
+		\draw[color=gray,thick] (-0.3,-0.3) -- (0.3,0.3);
+		\draw[color=gray,thick] (-0.3,0.3) -- (-0.05,0.05);
+		\draw[color=gray,thick] (0.05,-0.05) -- (0.3,-0.3);
+	}%
+}
+\newcommand{\KPC}{%
+	\KP{%
+		\draw[color=gray,thick] (-0.3,-0.3) .. controls (0.05,0) .. (-0.3,0.3);
+		\draw[color=gray,thick] (0.3,-0.3) .. controls (-0.05,0) .. (0.3,0.3);
+	}%
+}
+\newcommand{\KPD}{%
+	\KP{%
+		\draw[color=gray,thick] (-0.3,0.3) .. controls (0,-0.05) .. (0.3,0.3);
+		\draw[color=gray,thick] (-0.3,-0.3) .. controls (0,0.05) .. (0.3,-0.3);
+	}%
+}
+\newcommand{\KPI}{%
+	\KP{
+		\draw[color=gray,thick] (-0.3,0.3) -- (0.3,-0.3);
+		\draw[color=gray,thick] (-0.3,-0.3) -- (-0.05,-0.05);
+		\draw[color=gray,thick] (0.05,0.05) -- (0.3,0.3);
+	}%
+}
+
+
+\title{Nusos i el polinomi de Jones}
+\author{Guillem Tutusaus Alcaraz, 1533701, 1533701@uab.cat}
+%\text{Universitat Autònoma de Barcelona, Cerdanyola del Vallès}
+\supervisors{Joan Porti Piqué}
+\begin{document}
+	\twocolumn[
+	\maketitle
+	\begin{@twocolumnfalse}
+		\input{0_Abstract.tex}
+		%\tableofcontents
+	\end{@twocolumnfalse}
+	]
+	
+	\thispagestyle{firststyle}
+	
+	\input{Introducció.tex}
+	\input{Definicions.tex}
+	\input{Reidermeister.tex}
+	\input{Propietats_sobre_nusos.tex}
+	\input{Alguns_invariants_algebràics.tex}
+	\input{El polinomi_de_Jones.tex}
+	\input{Aplicacions.tex}
+	
+	
+	\bibliographystyle{plainnat}
+	\bibliography{sample}
+	
+	\clearpage
+	
+	\begin{appendices}
+		\input{9_appendixA.tex}
+		\newpage
+		\input{9_appendixB.tex}
+		\newpage
+	\end{appendices}
+\end{document}
