@@ -2,26 +2,32 @@
 
 \section{Alguns invariants algebràics}\label{sec:Invariantsalgebraics}
 
-El Teorema \ref{teo:teoremadeReidemeister} dona un mètode per saber quan dos nusos son equivalents, però aquest resultat no permet distingir quan dos nusos son diferents. D'aquesta manera per exemple, encara no sabem que $\ovoid\neq 3_1$. És per això que és necessari la creació d'invariants que ens permetin realitzar aquesta tasca.\\
+El Teorema \ref{teo:teoremadeReidemeister} dona un mètode per saber quan dos nusos son equivalents, aquest resultat però no permet distingir quan dos nusos son diferents. D'aquesta manera per exemple, encara no sabem que $\ovoid\neq 3_1$. Per això que és necessari la creació d'invariants que ens permetin realitzar aquesta tasca.\\
 
 Recordem que un invariant és un objecte ben definit, ja sigui un número, polinomi, grup, etcètera; que podem associar a un nus qualsevol, de manera que si tenim dos nusos amb diferent valor per aquest invariant, llavors segur que els dos nusos son diferents.
 
 \subsection{L'Ordre}\label{sec:ordrecomainvariant}
 
-Com haviem vist a la Definició \ref{def:ordre}, l'ordre d'un nus és un exemple d'invariant. Nusos amb diferent ordre no poden ser equivalents. Aquest invariant però és quasi intractable a nivell pràctic pel fet d'haver de considerar el mínim nombre de creuaments donats tots els diagrames d'aquest.\\
+Com ja podriem haver esperat, l'ordre d'un nus és un exemple d'invariant. Nusos amb diferent ordre no poden ser equivalents. Aquest invariant però és intractable a nivell pràctic pel fet d'haver de considerar el mínim nombre de creuaments donats tots els diagrames d'aquest.\\
 
-CAL LA DEMOSTRACIÓ QUE L'ORDRE ÉS UN INVARIANT ALGEBRÀIC (REIDEMEISTER?)
+\begin{proposition}
+	L'ordre d'un nus és un invariant.
+\end{proposition}
+
+\begin{proof}
+	Sigui $K$ un nus qualsevol amb diagrama $diag(K)$. Siguin $K_1, K_2, K_3, \dots$ nusos equivalents a $K$ amb els seus respectius diagrames formats a partir de diferents transformacions de $K$. D'entre aquests nusos, tenim un nus $K_k$ que té el mínim nombre de creuaments $x$. Definim $O(K)=O(K_k)=x$. Evidentment, $x=O(K_1)=O(K_2)=O(K_3)=\dots$. Ara, quan transformem el nus $K$ en un nus equivalent, com aquest està a la llista de nusos, aquest també pot ser transformat en $K_k$ on $O(K_k)=x$.
+\end{proof}
 
 \subsection{El Nombre de Desnuament}\label{sec:desnuamentcomainvariant}
 
 \begin{definition}\label{def:desnuament}
-	Diem que $u(K)$ és el \underline{nombre de desnuament} del nus $K$ si aquest és el mínim nombre de canvis en els creuaments d'un nus necessaris per tal d'aconseguir el nus zero donats tots els diagrames de $K$.
+	Diem que $u(K)$ és el \underline{nombre de desnuament} del nus $K$ si aquest és el mínim nombre de canvis en els creuaments d'un diagrama de nus necessaris per tal d'aconseguir el nus trivial. $$u(K)=\min\{u(D)|\text{D diagrama de K}\}$$
 \end{definition}
 
-El nombre de desnuament és també un invariant. Aquest però, de la mateixa manera que passa amb l'ordre és intractable a nivell pràctic. Intuïtivament, si $K$ és una corba a $S^3$, llavors $u(K)$ és el mínim nombre de vegades que $K$ ha de passar per sí mateix per aconseguir el nus zero.
+El nombre de desnuament és també un invariant. Aquest però, de la mateixa manera que passa amb l'ordre és intractable a nivell pràctic. Intuïtivament, si $K$ és una corba a $S^3$, llavors $u(K)$ és el mínim nombre de vegades que $K$ ha de passar per sí mateix per aconseguir el nus trivial.
 
 \begin{proposition}\label{prop:nombrededesnuament}
-	Donat un nus $K$ qualsevol, aquest sempre pot ser desnuat.
+	Donat un nus $K$ qualsevol, aquest sempre pot ser desnuat, i.e. $u(K)$ és finit.
 \end{proposition}
 
 \begin{proof}
@@ -44,23 +50,21 @@ El nombre de desnuament és també un invariant. Aquest però, de la mateixa man
 
 L'altre desigualtat és de fet un problema obert.\\
 
-Per acabar de veure com d'intractable és aquest invariant afirmem el següent resultat sense demostrar-lo.
+De fet, coneixer el nombre de desnuament d'un nus pot pensar-se com l'objectiu d'aquesta teoria. Si veiem que un nus $K$ no és el nus trivial i que un moviment local en algun dels creuaments dona com a resultat el nus trivial, llavors segur que $u(K)=1$. Així doncs, d'aquí a no massa estarà clar que $u(3_1)=u(4_1)=1$. No obstant, actualment encara hi ha una gran quantitat de nusos com per exemple $10_{11}$ dels quals se'ls hi desconeix el nombre de desnuament. Per aquest últim es creu que es troba entre dos i tres.\\
 
-\begin{proposition}
-	Sigui $K$ un nus, existeix un diagrama de $K$ pel qual $u(K)=C$ per a tot $C\in\mathbb{N}$.
-\end{proposition}
-
-%CALDRIA DEMOSTRAR QUE SEMPRE EXISTEIX AQUEST NOMBRE (SEMPRE ES POT ARRIBAR AL NUS ZERO CANVIANT UN NOMBRE FINIT DE CREUAMENTS) I QUE AQUEST NOMBRE NO CANVIA SI CONSIDEREM UN ALTRE CREAUMENT (NO IMPORTA EL CREAMENT ESCOLLIT), ENTRE ALTRES RESULTATS.
+Existeixen més resultats que poden ser útils alhora de diferenciar nusos, 
 
 \subsection{El Gènere}\label{sec:generescomainvariant}
 
 Veurem ara que tot link a $S^3$ es pot veure com la frontera d'una superfície immersa en $S^3$. Aquestes superfícies poden ser utilitzades per estudiar el link.
 
 \begin{definition}\label{def:superficiedeseifert}
-	Una \underline{superfície de Seifert} per un link $L$ orientat de $S^3$ és una superfície compacta, connexa i orientable continguda a $S^3$ de manera que la seva frontera és $L$.
+	Una \underline{superfície de Seifert} $S$ per un link $L$ orientat de $S^3$ és una superfície compacta, connexa i orientable, $S\subset S^3$ de manera que la seva frontera és $L$, i.e. $\partial S=L$.
 \end{definition}
 
-Exemples d'aquestes superfícies son com les de la Figura \ref{fig:superficiedeseifert}. Evidentment, tota superfície compacta connexa i orientada amb frontera dins $S^3$ és un exemple d'un link equipat amb una superfície de Seifert. Una superfície és no orientable si conté una banda de Möbius. Algunes superfícies poden ser construïdes amb un link qualsevol com a frontera de la següent manera: Pintant de color blanc i negre seguint un patró com el d'un taulell d'escacs les regions de $S^2$ que formen el complement del diagrama d'un link. Considerant totes les regions d'un mateix color i juntant-les per bandes amb una mitja volta arribem a obtenir un objecte com el de la Figura \ref{fig:trefoilseifert}.\\
+No es gens evident a partir de la Definició \ref{def:superficiedeseifert} que aquests objectes hagin d'existir i encara menys evident com es construeixen. A continuació veurem que de fet, aquests objectes existeixen i donarem una manera de construir-los. Exemples d'aquestes superfícies son com les de la Figura \ref{fig:superficiedeseifert}. \\
+
+És evident que tota superfície compacta connexa i orientada amb frontera dins $S^3$ és un exemple d'un link equipat amb una superfície de Seifert. Una superfície és no orientable si conté una banda de Möbius. Algunes superfícies poden ser construïdes amb un link qualsevol com a frontera de la següent manera: Pintant de color blanc i negre seguint un patró com el d'un taulell d'escacs les regions de $S^2$ que formen el complement del diagrama d'un link. Considerant totes les regions d'un mateix color i juntant-les per bandes amb una mitja volta arribem a obtenir un objecte com el de la Figura \ref{fig:trefoilseifert}.\\
 
 \begin{figure}
 	\centering
@@ -71,17 +75,17 @@ Exemples d'aquestes superfícies son com les de la Figura \ref{fig:superficiedes
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\linewidth]{img/trefoilseifert.png}
-	\caption{Dos diagrames del nus $3_1$ pintats com indiquen les instruccions on en comptes de pintar de color negre les regions hem dibuixat línies. Com es pot observar, la superfície de l'esquerra és no orientable mentre que la de la dreta si i doncs és una superfície de Seifert com haviem vist a la Definició \ref{def:superficiedeseifert}.}\label{fig:trefoilseifert}
+	\caption{Dos diagrames del nus $3_1$ pintats com indiquen les instruccions. Com es pot observar, la superfície de l'esquerra és no orientable al ser una cinta de Möbius amb tres mitjes voltes, la de la dreta, en canvi, sí; i doncs és una superfície de Seifert com haviem vist a la Definició \ref{def:superficiedeseifert}. Notem doncs que diagrames diferents d'un mateix nus poden o no donar lloc a una superfície de Seifert.}\label{fig:trefoilseifert}
 \end{figure}
 
-Tot i que aquest mètode pot donar resultat a una superfície de Seifert, en general aquest no té perquè ser el cas. Seifert dona un algorisme, per tal de trobar en general una superfície d'aquest tipus.\\
+Tot i que aquest mètode pot donar resultat a una superfície de Seifert, en general aquest no té perquè ser el cas. Herbert Seifert demostra l'existència d'aquests objectes i crea un algorisme per trobar-les [\cite{seifert}].
 
 \begin{theorem}\label{theo:existenciadesuperficiesdeseifert}
 	Tot link orientat $L$ a $S^3$ té una superfície de Seifert.
 \end{theorem}
 
 \begin{proof}
-	Sigui $diag(L)$ un diagrama orientat de $L$ qualsevol i sigui $\widehat{diag(L)}$ aquest darrer diagrama modificat segons indica la Figura \ref{fig:movimentsdeseifert}, llavors $\widehat{diag(L)}$ és el mateix que $diag(L)$ excepte en un entorn prou petit de cada creuament on aquest ha sigut eliminat de la única manera possible coherent amb l'orientació. Aquest $\widehat{diag(L)}$ és doncs una unió disjunta de corbes orientades simples i tancades dins $S^2$. Així doncs, $\widehat{diag(L)}$ és la frontera de la unió d'un nombre de discs disjunts tots en un costat de $S^2$. Juntem els discs mitjançant bandes amb una mitja volta als mateixos llocs on hi havia els creuaments. Això forma una superfície orientada amb $L$ com a frontera d'aquesta; cada disc rep la orientació induïda per $\widehat{diag(L)}$ i les bandes que uneixen els diferents discos van alternant aquesta orientació. Si aquesta superfície no és connexa, connectem els components eliminant discos i afegint tubs.
+	Sigui $diag(L)$ un diagrama orientat de $L$ qualsevol i sigui $\widehat{diag(L)}$ aquest darrer diagrama modificat segons indica la Figura \ref{fig:movimentsdeseifert}, llavors $\widehat{diag(L)}$ és el mateix que $diag(L)$ excepte en un entorn prou petit de cada creuament on aquest ha sigut eliminat de la única manera coherent amb l'orientació del nus. Aquest $\widehat{diag(L)}$ és doncs una unió disjunta de corbes orientades simples i tancades dins $S^2$. D'aquesta manera, $\widehat{diag(L)}$ és la frontera de la unió d'un nombre de discs disjunts. Considerant que aquests disc es troben al mateix nivell, excepte si aquests estan un contingut en l'altre --- en aquest cas el disc de dins es considerarà a sobre l'altre disc --- juntem els discs mitjançant bandes amb una mitja volta als mateixos llocs on hi havia els creuaments. Això forma una superfície orientada amb $L$ com a frontera. Cada disc rep la orientació induïda per $\widehat{diag(L)}$ i les bandes que uneixen els diferents discos van alternant aquesta orientació.
 \end{proof}
 
 \begin{figure}
@@ -90,31 +94,41 @@ Tot i que aquest mètode pot donar resultat a una superfície de Seifert, en gen
 	\caption{Moviments utilitzats en l'algorisme de Seifert. Quan ens trobem amb un creuament, resoldrem aquest com mostra la imatge central reseguint el nus o link com indica la seva orientació.}\label{fig:movimentsdeseifert}
 \end{figure}
 
-En la demostració del Teorema \ref{theo:existenciadesuperficiesdeseifert}, $\widehat{diag(L)}$ era una col·lecció disjunta de corbes simples i tancades construïdes a partir de $diag(L)$. Aquestes corbes s'anomemen \underline{cercles de Seifert} del $diag(L)$. La Figura \ref{fig:cerclesdeseifert} dona un exemple d'aquests.\\
+En la demostració del Teorema \ref{theo:existenciadesuperficiesdeseifert}, $\widehat{diag(L)}$ era una col·lecció disjunta de corbes simples i tancades construïdes a partir de $diag(L)$. Aquestes corbes s'anomemen \underline{cercles de Seifert} del $diag(L)$. La Figura \ref{fig:cerclesdeseifert} dona un exemple d'aquesta.\\
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\linewidth]{img/cerclesdeseifert.jpg}
+	\includegraphics[width=\linewidth]{img/cerclesdeseifert.png}
 	\caption{Exemple amb la construcció de $\widehat{diag(3_1)}$ a partir d'un diagrama de $3_1$ qualsevol.}\label{fig:cerclesdeseifert}
 \end{figure}
 
-Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'obté afegint dos discos un a sobre l'altre i tres bandes amb una mitja volta cadascun en els creuaments unint així els discos. Evidentment, aquest algorisme dona lloc a una superfície de Seifert donat un diagrama qualsevol de $L$ però aquesta no té perquè ser única. Tampoc té perquè ser la més senzilla donat un diagrama qualsevol.
+Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'obté afegint dos discos un a sobre l'altre i tres bandes amb una mitja volta cadascuna en els creuaments unint així els discos. Evidentment, aquest algorisme dona lloc a una superfície de Seifert donat un diagrama qualsevol de $L$ però aquesta no té perquè ser única. Tampoc té perquè ser la més senzilla donat un diagrama qualsevol.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\linewidth]{img/superficiedeseifert.jpg}
-	\caption{superfície de Seifert pel nus $3_1$ obtinguda unint els discos amb bandes.}\label{fig:superficiedeseifert2}
+	\includegraphics[width=0.6\linewidth]{img/superficiedeseifert.png}
+	\caption{superfície de Seifert pel nus $3_1$ obtinguda unint els discos a través de bandes amb una mitja volta. Una senzilla comprovació demostra que la frontera de la superfície és el mateix nus.}\label{fig:superficiedeseifert2}
 \end{figure}
 
 \begin{definition}\label{def:genere}
-	El \underline{gènere} $g(K)$ d'un nus $K$ es defineix com $$g(K)=\min\{g(F) \text{: F superfície de Seifert de K}\}$$
+	El \underline{gènere} $g(K)$ d'un nus $K$ es defineix com $$g(K)=\min\{g(F)| \text{F superfície de Seifert de K}\}$$
 \end{definition}
 
-Com en aquest cas $K$ és un nus, $F$ només té un component de frontera de manera que com a superfície abstracte és un disc amb un nombre concret de forats (AIXÒ NO ESTÀ DEL TOT BÉ). A aquest nombre se l'anomena gènere. Més precisament, el gènere de $F$ és $$g(F)=\frac{1}{2}(1-\mathcal{\chi}(F))$$ on $\mathcal{\chi}$ és la característica d'Euler de $F$. La característica d'Euler es pot definir paral·lelament com el nombre vèrtex menys el nombre de costats més el nombre de triangles en qualsevol triangulació de $F$.\\
+Com en aquest cas $K$ és un nus, $F$ només té una component de frontera de manera que com a superfície abstracta és un disc amb un nombre concret de "forats". A aquest nombre se l'anomena gènere. Més precisament, el gènere de $F$ és $$g(F)=\frac{1}{2}(1-\mathcal{\chi}(F))$$ on $\mathcal{\chi}$ és la característica d'Euler de $F$. La característica d'Euler es pot definir paral·lelament com el nombre de vèrtex menys el nombre de costats més el nombre de triangles en qualsevol triangulació de $F$.\\
 
 Si $diag(K)$ té $n$ creuament i $s$ cercles de Seifert, llavors $\mathcal{\chi}(F)=s-n$ de manera que $$g(K)\leq \frac{1}{2}(n-s+1)$$
 
-Aquest invariant té un millor tractament que els vistos anteriorment. A més, no és difícil veure que $K$ és el nus zero si i només si $g(K)=0$. Podem a més trobar una cota superior per aquest gènere. POTSER HAURIEM DE DEMOSTRAR AIXÒ ÚLTIM I A MÉS TAMBÉ DEMOSTRAR QUE EL GÈNERE ÉS UN INVARIANT.\\
+Aquest invariant té un millor tractament que els vistos anteriorment.
+
+\begin{proposition}
+	$K$ és el nus trivial si i només si $g(K)=0$
+\end{proposition}
+
+\begin{proof}
+	
+\end{proof}
+
+Podem a més trobar una cota superior per aquest gènere. POTSER HAURIEM DE DEMOSTRAR AIXÒ ÚLTIM I A MÉS TAMBÉ DEMOSTRAR QUE EL GÈNERE ÉS UN INVARIANT.\\
 
 \begin{theorem}\label{teo:sumabilitatdelgenere}
 	Donats dos nusos $K$ i $K'$, $$g(K+K')=g(K)+g(K')$$

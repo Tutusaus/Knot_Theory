@@ -8,7 +8,7 @@ Motivats per la Secció \ref{Equivalència entre nusos}, un podria veure sense m
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{img/MovimentsdeReidemeister.png}
+	\includegraphics[width=0.9\linewidth]{img/movimentsdereidemeister.png}
 	\caption{De dalt a baix: Moviment de Tipus I, Tipus II i Tipus III  [\cite{SobreelsmovdeReide}]. Cal pensar que els segments lliures de corda s'uneixen a través d'un nus $K$.}\label{fig:Moviments de Reidemeister}
 \end{figure}
 
@@ -23,6 +23,14 @@ A aquests tres tipus de moviments se'ls anomena moviments de Reidemeister. Al pr
 \noindent
 \textbf{Moviment de Tipus III o \textit{slide}:} També anomenat \textbf{RIII}. Aquest tipus de moviment consisteix en, com el nom en anglès indica, fer lliscar una de les tres cordes d'una banda a l'altra de la intersecció entre les dues cordes restants. En la Figura \ref{fig:Moviments de Reidemeister} podem veure com el segment de corda horitzontal llisca de dalt a baix del creuament entre les altres dues cordes.\\
 
+La Figura \ref{fig:movimentsdereidemeisteraltrefoil} mostra el nus $3_1$ juntament amb aquest mateix havent aplicat cadascun dels moviments anteriors.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{img/moviments de reidemeister (2).jpg}
+	\caption{Moviments de Reidemeister aplicats al nus $3_1$. D'esquerra a dreta i de dalt a baix: Nus $3_1$, nus $3_1$ havent aplicat un moviment RI, RII i RIII. Per aplicar RIII hem hagut d'aplicar Ri abans.}\label{fig:movimentsdereidemeisteraltrefoil}
+\end{figure}
+
 Continuant amb el que hem vist, no és massa difícil veure que aplicant una seqüència finita de moviments RI, RII o RIII a un diagrama de nus qualsevol, el nus obtingut és equivalent a l'original.
 
 \subsection{El Teorema central de la Teoria de Nusos}\label{sec:teoremacentraldelateoria}
@@ -33,12 +41,12 @@ L'any 1930, Kurt Reidemeister demostrà que l'implicació contrària també és 
    $diag(K)$ i $diag(K')$ son equivalents si i només si, existeix una seqüència finita de moviments RI, RII o RIII que passa d'un a l'altre.
 \end{theorem}
 
-Una demostració del teorema original es pot trobar a (Knot Knotes Justin Roberts, pàgina 18 Teorema 2.3.1) \cite{knotentheorie}, \textbf{però en essència aquesta demostració fa ús del fet que la manera en que un pot generar nusos equivalents a l'original és a través d'afegir triangles als costats d'un nus poligonal.}\\
+Una demostració del teorema original es pot trobar a \cite{knotknotes}. Aquesta demostració es troba fora de l'objectiu del treball --- i per això s'ha optat a no reproduïr-la --- però en essència aquesta demostració fa ús del fet que un pot generar nusos equivalents a l'original afegint triangles als costats d'un nus poligonal.\\
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{img/culprit-knot.png}
-	\caption{Com es pot observar en l'exemple, el nus de Culprit és equivalent al nus zero o \textit{unknot} en anglès. Mitjançant la seqüència de moviments següent podem passar de l'un a l'altra. D'esquerra a dreta i de dalt a baix: RII, RIII+RIII, RII, RIII, RI+RII, RII, RII, RII, RI, [\cite{culpritknot}].}\label{fig:culpritknot}
+	\caption{Com es pot observar en l'exemple, el nus de Culprit és equivalent al nus trivial. Mitjançant la seqüència de moviments següent podem passar de l'un a l'altra. D'esquerra a dreta i de dalt a baix: RII, RIII+RIII, RII, RIII, RI+RII, RII, RII, RII, RI, [\cite{culpritknot}].}\label{fig:culpritknot}
 \end{figure}
 
 El Teorema \ref{teo:teoremadeReidemeister} doncs, posa en evidència el fet que parlar d'equivalència entre nusos o d'equivalència entre diagrames de nusos és el mateix, doncs aquests estan en correspondència a través de la Secció \ref{sec:Representació de nus}.\\

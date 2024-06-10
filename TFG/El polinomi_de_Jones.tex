@@ -78,3 +78,24 @@ El troçament d'un link orientat juntament amb el polinomi de Kauffman d'un diag
 \begin{proof}
 	Conseqüència directa del Lema \ref{lem:RIIiRIII}, el Lema \ref{lem:RI} i l'observació sobre el torçament sota moviments $RI$ anterior.
 \end{proof}
+
+\begin{definition}\label{def:polinomidejones}
+	El polinomi de Jones $V(L)$ d'un link orientat $L$ és el polinomi de Laurent en $t^{1/2}$ i coeficients enters, definit per $$V(L)=\left((-A)^{-3w(L)}\left\langle L\right\rangle\right)_{t^{1/2}=A^{-2}}\in\mathbb{Z}[t^{1/2},t^{-1/2}]$$ on $\left\langle L\right\rangle$ és el polinomi de Kauffman i $w(L)$ és el torçament definits anteriorment.
+\end{definition}
+
+Aquí, $t^{1/2}$ és una indeterminada el quadrat de la qual és $t$. De fet, només els links amb un nombre senar de components, incloent els nusos tenen polinomi amb potències enteres de $t$ (CAL DEMOSTRAAAAAR ES FA PER INDUCCIÓ). El polinomi de Jones està ben definit i a més, $V(\ovoid)=1$. De fet, no es coneix cap altre exemple de nus $L$ pel qual $V(L)=1$; trobar un nus tal o demostrar que no existeix es considera un problema important. La Figura \ref{fig:polinomidejones} mostra una taula amb els polinomis de Jones de fins a 8 creuaments.\\
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{img/jonespolynomials.jpg}
+	\caption{Taula dels polinomis de Jones.}\label{fig:polinomidejones}
+\end{figure}
+
+Clarament, si l'orientació de cada component del link canvia, llavors el signe en cada creuament es manté constant. Així doncs, el polinomi de Jones d'un nus no depèn de l'orientació escollida. Dit d'una altra manera, el polinomi de Jones no distingeix un nus $K$ del seu invers $rK$. Pel que fa la quiralitat, el polinomi de Jones tampoc té perquè distingir-los tot i que hi ha certes circumstàncies en que si, i doncs es comporta millor en distingir nusos amb aquesta darrera propietat. Elaborant en aquest últim comentari, utilitzant la Definició \ref{def:polinomidejones} no és massa difícil veure que $$V(3_1)=t^{-3}+t^{-1}-t^{-4}$$ i $$V(\overline{3_1})=t+t^3-t^4$$ així doncs sabem que $3_1\neq\overline{3_1}$ i doncs no existeix cap isotopia ambient que passi d'un a l'altre.\\
+
+\begin{definition}\label{def:nombredenllaç}
+	Sigui $L$ un link orientat amb dues components $L_1$ i $L_2$. El \underline{nombre d'enllaç} $lk(L_1,L_2)$ de $L_1$ i $L_2$ és la meitat de la suma dels signes del seu diagrama els creuaments dels quals son sobrepassos.
+\end{definition}
+*******************
+
+És fàcil veure que si a un link orientat $L$ se li canvia l'orientació de només una component $K$ donant lloc a $L'$, llavors $$V(L')=t^{-3lk(K,L-K)}V(L)$$ d'aquesta manera el polinomi de Jones depèn de l'orientació d'una manera molt elemental.

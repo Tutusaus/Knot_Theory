@@ -2,11 +2,13 @@
 
 \section{Algunes definicions i els objectius de la teoria de nusos}\label{sec:Algunes definicions i els objectius de la teoria de nusos}
 
-De definicions de nus, parlant en termes matemàtics, n'hi ha diverses. Nosaltres considerarem la definició dins el camp de la topologia, d'on en reutilitzarem molta notació. A més, la teoria de nusos s'emmarca dins una teoria més general; la de links. La següent secció pretén donar unes primeres definicions pel que fa aquests conceptes.
+De definicions de nus, parlant en termes matemàtics, n'hi ha diverses. Nosaltres considerarem la definició dins el camp de la topologia, d'on en reutilitzarem molta notació. A més, la teoria de nusos s'emmarca dins una teoria més general; la de links. Per tant, moltes vegades anirem mencionant resultats que també son vàlids per aquests objectes. La següent secció pretén donar unes primeres definicions pel que fa als nostres objectes d'estudi.
 
 \begin{definition}\label{def: Definició de nus}
-	Diem que $L$ és un \underline{link} de m components, o un m-link si és un subconjunt de $S^3$, o de $\mathbb{R}^3$, que consisteix en m corbes disjuntes, simples, tancades i lineals a trossos. Un link d'una component és un \underline{nus}.
+	Diem que $L$ és un \underline{link} de m components, o un m-link si és un subconjunt de $S^3$, o de $\mathbb{R}^3$, que consisteix en m corbes disjuntes, simples, tancades i lineals a trossos. Un 1-link és un \underline{nus}.
 \end{definition}
+
+La condició de lineal a trossos significa que les components de $L$ estan cadascuna d'elles feta d'un nombre finit de rectes col·locades una al costat de l'altra amb el principi d'una coincidint amb el final de l'altra. Aquesta condició evita la creació de nusos patològics que no presenten un comportament esperat. A aquests últims nusos se'ls anomena \textit{salvatges} i no seran estudiats en aquest treball. A la pràctica, quan representem nusos o links assumirem que hi ha tants segments rectes que cada component semblarà corba.\\
 
 \begin{figure}
 	\centering
@@ -14,22 +16,19 @@ De definicions de nus, parlant en termes matemàtics, n'hi ha diverses. Nosaltre
 	\caption{Exemple d'un nus salvatge.}\label{fig:nussalvatge}
 \end{figure}
 
-La condició de lineal a trossos significa que les components de $L$ estan cadascuna d'elles feta d'un nombre finit de rectes col·locades una al costat de l'altre amb el principi d'una coincidint amb el final de l'altre. A la pràctica, quan representem nusos o links assumirem que hi ha tants segments rectes que cada component semblarà corba. El motiu pel qual el nombre de rectes que formen cada component és finit evita la possibilitat de construïr links o nusos amb un nombre infinit de creuaments que convergeixen en un punt, fent-se cada vegada més petits. Aquests darrers nusos s'anomenen \textit{salvatges} i no seran estudiats en aquest treball.\\
-
-\noindent
 \textit{De què tracta la teoria de nusos?}
 Una possible resposta és que la teoria de nusos pretén classificar el conjunt de possibles nusos. Donat un nus $K$, hom considera que aquest està inclòs, mitjançant una aplicació contínua, dins l'espai ambient tres dimensional $\mathbb{R}^3$ o equivalentment dins $S^3$, obtenim aleshores la teoria clàssica de nusos. Aquesta teoria pretén estudiar la col·locació de $K$ dins aquest espai. Classificar, en aquest cas vol dir considerar iguals sota certes condicions, que definirem més endavant.
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
-	\includegraphics[width=0.43\linewidth]{img/knot.png}
-	\includegraphics[width=0.46\linewidth]{img/boromeanrings.png}
-	\caption{Exemples d'un nus (a l'esquerra) i d'un link de tres components o 3-link (a la dreta) conegut amb el nom del nus Borromeu. 
+	\includegraphics[width=0.45\linewidth]{img/7_1.jpg}
+	\includegraphics[width=0.45\linewidth]{img/anell borromeu.jpg}
+	\caption{A l'esquerra el nus $7_1$ (més endavant explicarem el perquè del nom). A la dreta un 3-link conegut amb el nom d'anell Borromeu. 
 	}\label{fig:exemplesdenusosenmatematiques}
 \end{figure}
 
 \begin{definition}
-	Diem que un nus està \underline{desnuat} o que és el nus zero, notacionalment $\ovoid$ si no presenta cap creuament en els segments de corda que el formen.
+	Diem que un nus està \underline{desnuat} o que és el nus trivial, notacionalment $\ovoid$ si no presenta cap creuament en els segments de corda que el formen.
 \end{definition}
 
 \subsection{Equivalència entre nusos}\label{Equivalència entre nusos}
@@ -44,11 +43,10 @@ Expliquem ara què entem quan diem que dos nusos son el mateix.
 \subsection{Representació d'un nus en matemàtiques}\label{sec:Representació de nus}
 Tenint present la definició de nus a partir d'ara en sentit matemàtic donada a la Definició \ref{def: Definició de nus}, un pot veure la dificultat d'estudiar aquest tipus d'objectes tres dimensionals en un llibre de text o bé en una pissarra. És per això, que per tal d'estudiar-los sovint es representen els nusos mitjançant el seu \textit{diagrama de nus}.\\
 
-Considerant la projecció paral·lela (o axonomètrica) sobre l'eix z en el pla $\mathbb{R}^2$ d'un nus qualsevol $K$, obtindrem una figura com en l'exemple \ref{fig:projecció d'un nus sobre R2}.
+Considerant la projecció paral·lela (o axonomètrica) sobre l'eix $z$ en el pla $\mathbb{R}^2$ d'un nus qualsevol $K$, obtindrem una figura com en l'exemple \ref{fig:projecció d'un nus sobre R2}.\\
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
-	\begin{flushright}
 		\resizebox{7.5cm}{!}{
 			
 			\begin{tikzpicture}
@@ -68,6 +66,7 @@ Considerant la projecció paral·lela (o axonomètrica) sobre l'eix z en el pla 
 						domain=-pi:pi,
 						samples = 120,
 						samples y=0,
+						mesh
 						]
 						({sin(deg(x))+2*sin(2*deg(x))},
 						{cos(deg(x))-2*cos(2*deg(x))},
@@ -78,14 +77,13 @@ Considerant la projecció paral·lela (o axonomètrica) sobre l'eix z en el pla 
 			\end{tikzpicture}
 			
 		}
-	\end{flushright}
-	\caption{A l'esquerra el nus Trefoil amb parametrització $(\sin t+2\sin 2t, \cos t-2\cos 2t,-\sin 3t)$. A la dreta, la seva projecció paral·lela sobre l'eix $z$.}\label{fig:projecció d'un nus sobre R2}
+	\caption{A l'esquerra el nus $3_1$ també conegut com Trefoil amb parametrització $(\sin t+2\sin 2t, \cos t-2\cos 2t,-\sin 3t)$. A la dreta, la seva projecció paral·lela sobre l'eix $z$.}\label{fig:projecció d'un nus sobre R2}
 \end{figure}
 
 Considerant aquesta projecció però, un perd informació sobre el propi nus, ja que cal saber quin segment de corda va per sobre i quin per sota alhora de creuar-se. Per tal de no perdre aquesta informació, el segment que passa per sota se'l dibuixa de forma discontínua mentre aquest passa sota el segment de corda que el creua.\\
 
 \noindent
-D'aquesta manera, la projecció del Trefoil de la Figura \ref{fig:projecció d'un nus sobre R2} quedaria de la següent manera:
+D'aquesta manera, la projecció del nus $3_1$ de la Figura \ref{fig:projecció d'un nus sobre R2} quedaria de la següent manera:
 
 \begin{figure}[H]
 	\resizebox{6.5cm}{!}{
