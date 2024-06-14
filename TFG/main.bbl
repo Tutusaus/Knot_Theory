@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,6 +23,11 @@ L~Kauffman and S~Lambropoulou.
 \newblock Unknots and dna.
 \newblock \emph{Current Developments in Mathematical Biology}, 38:\penalty0
   39--68, 2007.
+
+\bibitem[Kohli and Tahar(2023)]{lowerbound}
+Ben-Michael Kohli and Guillaume Tahar.
+\newblock A lower bound for the genus of a knot using the links-gould
+  invariant, 2023.
 
 \bibitem[Roberts(2015)]{knotknotes}
 Justin Roberts.

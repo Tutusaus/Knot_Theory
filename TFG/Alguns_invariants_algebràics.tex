@@ -62,9 +62,9 @@ Veurem ara que tot link a $S^3$ es pot veure com la frontera d'una superfície i
 	Una \underline{superfície de Seifert} $S$ per un link $L$ orientat de $S^3$ és una superfície compacta, connexa i orientable, $S\subset S^3$ de manera que la seva frontera és $L$, i.e. $\partial S=L$.
 \end{definition}
 
-No es gens evident a partir de la Definició \ref{def:superficiedeseifert} que aquests objectes hagin d'existir i encara menys evident com es construeixen. A continuació veurem que de fet, aquests objectes existeixen i donarem una manera de construir-los. Exemples d'aquestes superfícies son com les de la Figura \ref{fig:superficiedeseifert}. \\
+No es gens evident a partir de la Definició \ref{def:superficiedeseifert} que aquests objectes hagin d'existir i encara menys evident com es construeixen. A continuació veurem que de fet, existeix un algorisme per construir-los. Exemples d'aquestes superfícies son com les de la Figura \ref{fig:superficiedeseifert}. \\
 
-És evident que tota superfície compacta connexa i orientada amb frontera dins $S^3$ és un exemple d'un link equipat amb una superfície de Seifert. Una superfície és no orientable si conté una banda de Möbius. Algunes superfícies poden ser construïdes amb un link qualsevol com a frontera de la següent manera: Pintant de color blanc i negre seguint un patró com el d'un taulell d'escacs les regions de $S^2$ que formen el complement del diagrama d'un link. Considerant totes les regions d'un mateix color i juntant-les per bandes amb una mitja volta arribem a obtenir un objecte com el de la Figura \ref{fig:trefoilseifert}.\\
+És evident que tota superfície compacta connexa i orientada amb frontera dins $S^3$ és un exemple d'un link. Una superfície és no orientable si conté una banda de Möbius. Algunes superfícies poden ser construïdes amb un link qualsevol com a frontera de la següent manera: Pintant de color blanc i negre seguint un patró com el d'un taulell d'escacs les regions de $S^2$ que formen el complement del diagrama d'un link. Considerant totes les regions d'un mateix color i juntant-les per bandes amb una mitja volta arribem a obtenir un objecte com el de la Figura \ref{fig:trefoilseifert}.\\
 
 \begin{figure}
 	\centering
@@ -78,7 +78,7 @@ No es gens evident a partir de la Definició \ref{def:superficiedeseifert} que a
 	\caption{Dos diagrames del nus $3_1$ pintats com indiquen les instruccions. Com es pot observar, la superfície de l'esquerra és no orientable al ser una cinta de Möbius amb tres mitjes voltes, la de la dreta, en canvi, sí; i doncs és una superfície de Seifert com haviem vist a la Definició \ref{def:superficiedeseifert}. Notem doncs que diagrames diferents d'un mateix nus poden o no donar lloc a una superfície de Seifert.}\label{fig:trefoilseifert}
 \end{figure}
 
-Tot i que aquest mètode pot donar resultat a una superfície de Seifert, en general aquest no té perquè ser el cas. Herbert Seifert demostra l'existència d'aquests objectes i crea un algorisme per trobar-les [\cite{seifert}].
+Tot i que aquest mètode pot donar com a resultat una superfície de Seifert, en general aquest no té perquè ser el cas. Herbert Seifert demostrà l'existència d'aquests objectes i donà un algorisme --- que duu el seu mateix nom --- per trobar-les [\cite{seifert}].
 
 \begin{theorem}\label{theo:existenciadesuperficiesdeseifert}
 	Tot link orientat $L$ a $S^3$ té una superfície de Seifert.
@@ -102,7 +102,7 @@ En la demostració del Teorema \ref{theo:existenciadesuperficiesdeseifert}, $\wi
 	\caption{Exemple amb la construcció de $\widehat{diag(3_1)}$ a partir d'un diagrama de $3_1$ qualsevol.}\label{fig:cerclesdeseifert}
 \end{figure}
 
-Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'obté afegint dos discos un a sobre l'altre i tres bandes amb una mitja volta cadascuna en els creuaments unint així els discos. Evidentment, aquest algorisme dona lloc a una superfície de Seifert donat un diagrama qualsevol de $L$ però aquesta no té perquè ser única. Tampoc té perquè ser la més senzilla donat un diagrama qualsevol.
+Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'aconsegueix superposant les dues corbes disjuntes una a sobre l'altra i unir-les mitjançant tres bandes amb una mitja volta cadascuna en els creuaments. Evidentment, aquest algorisme dona lloc a una superfície de Seifert. Donat un diagrama qualsevol de $L$ però, aquesta no té perquè ser única. Tampoc té perquè ser la més senzilla donat un diagrama qualsevol.
 
 \begin{figure}
 	\centering
@@ -111,39 +111,61 @@ Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'obté afeg
 \end{figure}
 
 \begin{definition}\label{def:genere}
-	El \underline{gènere} $g(K)$ d'un nus $K$ es defineix com $$g(K)=\min\{g(F)| \text{F superfície de Seifert de K}\}$$
+	El \underline{gènere} $g(K)$ d'un nus $K$ es defineix com $$g(K)=\min\{g(S)| \text{S superfície de Seifert de K}\}$$ Direm que una superfície de Seifert $S$ amb $K$ com a frontera és \textit{minimal} si $g(S)=g(K)$.
 \end{definition}
 
-Com en aquest cas $K$ és un nus, $F$ només té una component de frontera de manera que com a superfície abstracta és un disc amb un nombre concret de "forats". A aquest nombre se l'anomena gènere. Més precisament, el gènere de $F$ és $$g(F)=\frac{1}{2}(1-\mathcal{\chi}(F))$$ on $\mathcal{\chi}$ és la característica d'Euler de $F$. La característica d'Euler es pot definir paral·lelament com el nombre de vèrtex menys el nombre de costats més el nombre de triangles en qualsevol triangulació de $F$.\\
-
-Si $diag(K)$ té $n$ creuament i $s$ cercles de Seifert, llavors $\mathcal{\chi}(F)=s-n$ de manera que $$g(K)\leq \frac{1}{2}(n-s+1)$$
-
-Aquest invariant té un millor tractament que els vistos anteriorment.
-
 \begin{proposition}
-	$K$ és el nus trivial si i només si $g(K)=0$
+	El gènere d'un nus és invariant.
 \end{proposition}
 
 \begin{proof}
-	
+	Considerem una superfície de Seifert minimal $S$ que té per frontera $K$. Com $K$ és equivalent a $K'$ llavors ha d'existir un homeomorfisme $h:S^3\rightarrow S^3$ de manera que $h(K)=K'$. Llavors, $h(S)$ és una superfície de Seifert que té per frontera $K'$ i $g(h(S))=g(S)=g(K)$. A més, $h(S)$ és una superfície de Seifert minimal que té $S'$ per frontera i per tant $g(K)=g(K')$. Si $h(S)$ no fos una superfície de Seifert minimal de $K'$, llavors existiria una superfície de Seifert minimal $S'$ que tindria $K'$ per frontera i tal que $g(S')<g(h(S))$ i per tant $h^{-1}(S')$ seria una superfície de Seifert amb $K$ per frontera amb gènere menor que $g(S)$, però això no pot ser ja que $S$ és minimal.
 \end{proof}
 
-Podem a més trobar una cota superior per aquest gènere. POTSER HAURIEM DE DEMOSTRAR AIXÒ ÚLTIM I A MÉS TAMBÉ DEMOSTRAR QUE EL GÈNERE ÉS UN INVARIANT.\\
+Com en aquest cas $K$ és un nus, $S$ només té una component de frontera de manera que com a superfície abstracta és un disc amb un nombre concret de "mànecs". A aquest nombre se l'anomena gènere. Més precisament, el gènere de $S$ és
+
+\begin{equation}\label{eq:generedunasuperficie}
+	g(S)=\frac{1}{2}(1-\mathcal{\chi}(S))
+\end{equation}
+
+on $\mathcal{\chi}$ és la característica d'Euler de $S$. La característica d'Euler es pot definir paral·lelament com el nombre de vèrtex menys el nombre de costats més el nombre de triangles en qualsevol triangulació de $S$.\\
+
+Si $diag(K)$ té $n$ creuament i $s$ cercles de Seifert, llavors $\mathcal{\chi}(S)=s-n$ de manera que
+
+\begin{equation}\label{eq:cotasuperiorgenere}
+	g(K)\leq \frac{1}{2}(n-s+1)
+\end{equation}
+
+Aquest invariant té un millor tractament que els vistos anteriorment. Donem ara una caracterització del nus trivial en termes del gènere.
+
+\begin{proposition}
+	$K$ és el nus trivial si i només si $g(K)=0$.
+\end{proposition}
+
+\begin{proof}
+	Si $K$ és el nus trivial, llavors un disc amb frontera $K$ és clarament una superfície de Seifert minimal amb $K$ per frontera. I com que un disc és una esfera amb un component de frontera deduïm que $g(K)=g(S^2)=0$. Alternativament, si $K$ és tal que $g(K)=0$, llavors existeix una superfície de Seifert minimal $S$ amb $g(S)=0$, d'aquesta manera $S$ és una esfera amb una component per frontera, i.e. un disc.
+\end{proof}
+
+Seguint amb l'exemple del nus $3_1$, llavors es veu clarament que $g(3_1)=1$. Per tant, ja sabem que $3_1\neq\ovoid$. De manera similar un pot arribar a calcular els gèneres d'un gran nombre de nusos. El problema amb aquest mètode és que l'Equació \ref{eq:cotasuperiorgenere} dona una cota superior per aquest gènere i per tant, a mesura que incrementem el nombre de creuaments és possible que el gènere pugui prendre un nombre finit de valor diferents entre ells. Per exemple, un exercici senzill demostra que $g(8_{20})\leq2$ i doncs pot ser 1 o bé 2.
+
+\subsubsection{Additivitat i aplicacions}
 
 \begin{theorem}\label{teo:sumabilitatdelgenere}
 	Donats dos nusos $K$ i $K'$, $$g(K+K')=g(K)+g(K')$$
 \end{theorem}
 
 \begin{proof}
-	JA LA FARÉ
+	Comencem veient $g(K+K')\leq g(K)+g(K')$. Considerem que $K$ i $K'$ estan separats per un pla i considerem les superfícies de Seifert minimals de tots dos nusos $S$ i $S'$ ($S$ i $S'$ també estan separades pel pla). Donem una orientació a $K$ i $K'$ i considerem la seva suma assegurant-nos que $K+K'$ no intersecti $Int(S)$ ni $Int(S')$. Considerem ara una banda $B$ que conecta $K$ i $K'$ que té per frontera els dos segments de corda introduïts al considerar la suma $K+K'$ i de tal manera que $B$ no intersecta $Int(S)$ ni $Int(S')$. D'aquesta manera, $B$ conecta $S$ i $S'$ i doncs $C=S\cup S'\cup B$ és una superfície de Seifert per $K+K'$. Finalment com $g(C)=g(S)+g(S')=g(K)+g(K')$ tenim $g(K+K')\leq g(K)+g(K')$. L'altre desigualtat es pot trobar a AAAAAAAAAAAAAAAAAAAAAA
 \end{proof}
 
+A partir del Teorema \ref{teo:sumabilitatdelgenere} obtenim un seguit de resultats:
+
 \begin{corolary}
-	Cap nus tret del nus zero té oposat respecte la suma.
+	Cap nus tret del nus trivial té oposat respecte la suma. És a dir, que si $K+K'=\ovoid$, llavors $K=K'=\ovoid$.
 \end{corolary}
 
 \begin{proof}
-	Suposem que existeix $K$ i $K'$ amb almenys un d'ells diferent del nus zero de manera que $K+K'=\ovoid$, llavors en virtut del Teorema \ref{teo:sumabilitatdelgenere}
+	Suposem que existeix $K$ i $K'$ amb almenys un d'ells diferent del nus trivial de manera que $K+K'=\ovoid$, llavors en virtut del Teorema \ref{teo:sumabilitatdelgenere}
 	\begin{align*}
 		&g(K+K')=g(K)+g(K')\\
 		&0=g(K)+g(K')
@@ -156,7 +178,7 @@ Podem a més trobar una cota superior per aquest gènere. POTSER HAURIEM DE DEMO
 \end{corolary}
 
 \begin{proof}
-	Sigui $K$ un nus no trivial qualsevol i $\sum^{n}K$ la suma de $n$ còpies d'aquest. Veiem que si $n\neq m$, llavors $\sum^{n}K\neq\sum^{m}K$. Suposem que $\sum^{n}K=\sum^{m}K$, aleshores $\sum^{n}g(K)=\sum^{m}g(k)$. Sense pèrdua de generalitat podem suposar que $m>n$, d'aquesta manera $\sum^{m-n}g(K)=0$ cosa que implica $K=\ovoid$.
+	Sigui $K$ un nus no trivial qualsevol i $\sum^{n}K$ la suma de $n$ còpies d'aquest. Veiem que si $n\neq m$, llavors $\sum^{n}K\neq\sum^{m}K$. Suposem que $\sum^{n}K=\sum^{m}K$, aleshores $\sum^{n}g(K)=\sum^{m}g(K)$. Sense pèrdua de generalitat podem suposar que $m>n$, d'aquesta manera $\sum^{m-n}g(K)=0$ cosa que implica $K=\ovoid$. Contradicció amb el fet que $K$ no pot ser trivial.
 \end{proof}
 
 \begin{corolary}
@@ -168,13 +190,27 @@ Podem a més trobar una cota superior per aquest gènere. POTSER HAURIEM DE DEMO
 \end{proof}
 
 \begin{corolary}
-	Tot nus pot ser expressat com a suma finita de nusos primers.
+	Tot nus $K$ pot ser expressat com a suma finita de nusos primers.
 \end{corolary}
 
 \begin{proof}
-	Si un nus no és primer, aquest es pot expressar com a suma de dos nusos de menor gènere. Per inducció sobre el gènere ja ho tindriem.
+	Si $K$ és primer, llavors el resultat és obvi. Suposem ara que $K$ no sigui un nus primer. Per definició, existeixen $K_1$ i $K_2$ tots dos diferents del nus trivial de manera que $K=K_1+K_2$ i del Teorema \ref{teo:sumabilitatdelgenere} sabem que $g(K_1),g(K_2)<g(K)$. Ara, fent el mateix procés amb $K_1$ i $K_2$ podem concloure que $K$ és suma de nusos primers.
 \end{proof}
 
-Es pot veure també, que aquesta expressió és única tret de l'ordenació dels sumands.\\
+\begin{corolary}
+	Existeixen nusos amb un nombre de creuaments arbitràriament gran.
+\end{corolary}
 
-AL FINAL DE LA SECCIÓ CAL REMARCAR QUE LA TEORIA D'INVARIANTS NO S'HA DE CONCEBRE COM UNA TEORIA ON HI HAGI INVARIANTS MILLORS QUE D'ALTRES, SINÓ QUE CADASCUN AJUDA EN LA CLASSIFICACIÓ DE MANERA QUE EL QUE POTSER UN INVARIANT NO PERMET DISTINGIR, UN ALTRE SI. D'AQUESTA MANERA, PODEM PENSAR EN ELS INVARIANTS COM UNA CAIXA D'EINES QUE PODEM UTILITZAR ALHORA D'ESTUDIAR UN NUS. També m'agradaria tenir una taula amb tots els nusos de fins a 9 creuaments classificats en funció de cada invariant estudiat fins al moment
+\begin{proof}
+	Sigui $K$ un nus qualsevol, com que el nombre de cercles de Seifert sempre serà com a mínim $1$, utilitzant l'Equació \ref{eq:cotasuperiorgenere} tenim $$g(K)\leq \frac{n}{2}$$ on $n$ és el nombre de creuaments del diagrama de $K$. Considerem ara un nus no trivial i $K_m=\sum^{m}K$ la suma de $m$ còpies de $K$. Llavors, $$m\leq g(K_m)\leq \frac{c(K_m)}{2}$$ on $c(K_m)$ és el nombre de creuaments de la suprfície de Seifert de $K_m$. A mesura que $m$ s'acosta a infinit, també ho fa $c(K_m)$.
+\end{proof}
+
+Cal remarcar que existeixen cotes inferiors pel gènere d'un nus qualsevol [\cite{lowerbound}] i que hi ha classes de nusos amb molt bones propietats pel que fa el seu gènere. Nosaltres però al no fer-nos falta, ens limitarem a fer-ne menció i classificarem els nusos d'ordre més baix utilitzant només els resultats vistos.\\
+
+La Figura \ref{fig:genus} mostra una taula per al gènere d'un nus primer de fins a $7$ creuaments.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{img/genus.png}
+	\caption{Gènere de tots dels nusos primers de fins a $7$ creuaments.}\label{fig:genus}
+\end{figure}

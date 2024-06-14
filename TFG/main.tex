@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper,twocolumn]{article}
+\documentclass[12pt,a4paper,twocolumn]{article}
 \usepackage{bachelorproject}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.12}
@@ -45,6 +45,12 @@
 		\draw[color=gray,thick] (-0.3,0.3) -- (0.3,-0.3);
 		\draw[color=gray,thick] (-0.3,-0.3) -- (-0.05,-0.05);
 		\draw[color=gray,thick] (0.05,0.05) -- (0.3,0.3);
+	}%
+}
+\newcommand{\KPF}{%
+	\KP{%
+		\draw[color=gray,thick] (-0.3,-0.3) .. controls (0.05,0) .. (-0.3,0.3);
+		\draw[color=gray,thick] (0.3,-0.3) .. controls (-0.05,0) .. (0.3,0.3);
 	}%
 }
 
