@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.13)  14 JUN 2024 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.13)  24 JUN 2024 22:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1704,16 +1704,6 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \c@corolary=\count388
 \c@lemma=\count389
 
-Underfull \hbox (badness 1342) in paragraph at lines 11--12
-\OT1/lmr/m/n/12 (+20) L'esp^^Recie hu-mana t^^Se coneix-e-ment dels
- []
-
-
-Underfull \hbox (badness 4621) in paragraph at lines 11--12
-\OT1/lmr/m/n/12 (+20) per l'enregistrament d'informaci^^So, les
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -1784,7 +1774,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
 Underfull \vbox (badness 2932) has occurred while \output is active []
 
-<img/Decoració portada.pdf, id=92, 592.2125pt x 61.22874pt>
+<img/Decoració portada.pdf, id=88, 592.2125pt x 61.22874pt>
 File: img/Decoració portada.pdf Graphic file (type pdf)
 <use img/Decoració portada.pdf>
 Package pdftex.def Info: img/Decoració portada.pdf  used on input line 20.
@@ -1803,12 +1793,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<img/nus simple.jpg, id=105, 1541.76pt x 1541.76pt>
+<img/nus simple.jpg, id=101, 1541.76pt x 1541.76pt>
 File: img/nus simple.jpg Graphic file (type jpg)
 <use img/nus simple.jpg>
 Package pdftex.def Info: img/nus simple.jpg  used on input line 26.
 (pdftex.def)             Requested size: 100.1076pt x 100.10028pt.
-<img/arbre de la vida.jpg, id=106, 1541.76pt x 1541.76pt>
+<img/arbre de la vida.jpg, id=102, 1541.76pt x 1541.76pt>
 File: img/arbre de la vida.jpg Graphic file (type jpg)
 <use img/arbre de la vida.jpg>
 Package pdftex.def Info: img/arbre de la vida.jpg  used on input line 27.
@@ -1841,7 +1831,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<img/wildknot.png, id=109, 401.5pt x 125.46875pt>
+<img/wildknot.png, id=105, 401.5pt x 125.46875pt>
 File: img/wildknot.png Graphic file (type png)
 <use img/wildknot.png>
 Package pdftex.def Info: img/wildknot.png  used on input line 15.
@@ -1849,12 +1839,12 @@ Package pdftex.def Info: img/wildknot.png  used on input line 15.
 [2{C:/Users/guill/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
 c}{C:/Users/guill/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} 
 <./img/nus simple.jpg> <./img/arbre de la vida.jpg> <./img/wildknot.png>]
-<img/7_1.jpg, id=126, 1952.29375pt x 1952.29375pt>
+<img/7_1.jpg, id=122, 1952.29375pt x 1952.29375pt>
 File: img/7_1.jpg Graphic file (type jpg)
 <use img/7_1.jpg>
 Package pdftex.def Info: img/7_1.jpg  used on input line 24.
 (pdftex.def)             Requested size: 97.92926pt x 97.91829pt.
-<img/anell borromeu.jpg, id=127, 1437.37pt x 1437.37pt>
+<img/anell borromeu.jpg, id=123, 1437.37pt x 1437.37pt>
 File: img/anell borromeu.jpg Graphic file (type jpg)
 <use img/anell borromeu.jpg>
 Package pdftex.def Info: img/anell borromeu.jpg  used on input line 25.
@@ -1918,7 +1908,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<img/movimentsdereidemeister.png, id=149, 541.27219pt x 452.4403pt>
+<img/movimentsdereidemeister.png, id=145, 541.27219pt x 452.4403pt>
 File: img/movimentsdereidemeister.png Graphic file (type png)
 <use img/movimentsdereidemeister.png>
 Package pdftex.def Info: img/movimentsdereidemeister.png  used on input line 11
@@ -1957,13 +1947,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<img/moviments de reidemeister (2).jpg, id=157, 1668.9853pt x 1305.37688pt>
+[4 <./img/movimentsdereidemeister.png>]
+<img/moviments de reidemeister (2).jpg, id=163, 1668.9853pt x 1305.37688pt>
 File: img/moviments de reidemeister (2).jpg Graphic file (type jpg)
 <use img/moviments de reidemeister (2).jpg>
 Package pdftex.def Info: img/moviments de reidemeister (2).jpg  used on input l
 ine 30.
 (pdftex.def)             Requested size: 217.62206pt x 170.20291pt.
-[4 <./img/movimentsdereidemeister.png>]
+
 Underfull \hbox (badness 3354) in paragraph at lines 44--45
 \OT1/lmr/m/n/12 (+20) generar nu-sos equiv-a-lents a l'original
  []
@@ -1978,7 +1969,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<img/culprit-knot.png, id=170, 1291.82625pt x 645.41125pt>
+<img/culprit-knot.png, id=166, 1291.82625pt x 645.41125pt>
 File: img/culprit-knot.png Graphic file (type png)
 <use img/culprit-knot.png>
 Package pdftex.def Info: img/culprit-knot.png  used on input line 48.
@@ -2005,7 +1996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<img/orientació.png, id=191, 387.849pt x 200.54926pt>
+<img/orientació.png, id=187, 387.849pt x 200.54926pt>
 File: img/orientació.png Graphic file (type png)
 <use img/orientació.png>
 Package pdftex.def Info: img/orientació.png  used on input line 66.
@@ -2015,18 +2006,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-<img/nussuma.png, id=192, 484.05844pt x 199.49532pt>
+<img/nussuma.png, id=188, 484.05844pt x 199.49532pt>
 File: img/nussuma.png Graphic file (type png)
 <use img/nussuma.png>
 Package pdftex.def Info: img/nussuma.png  used on input line 78.
 (pdftex.def)             Requested size: 195.85852pt x 80.71904pt.
-<img/knottable.png, id=196, 33.58638pt x 44.8082pt>
+<img/knottable.png, id=192, 33.58638pt x 44.8082pt>
 File: img/knottable.png Graphic file (type png)
 <use img/knottable.png>
 Package pdftex.def Info: img/knottable.png  used on input line 86.
 (pdftex.def)             Requested size: 195.85852pt x 261.36165pt.
-) (Alguns_invariants_algebràics.tex [6 <./img/orientació.png> <./img/nussuma.
-png>]
+[6 <./img/orientació.png> <./img/nussuma.png>])
+(Alguns_invariants_algebràics.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -2061,7 +2052,7 @@ OML/lmm/m/it/12 u\U/matha/m/n/12 p\OML/lmm/m/it/12 K\U/matha/m/n/12 q$ \OT1/lmr
  []
 
 [7 <./img/knottable.png>]
-<img/movimentlocal.png, id=221, 176.91093pt x 82.05656pt>
+<img/movimentlocal.png, id=218, 176.91093pt x 82.05656pt>
 File: img/movimentlocal.png Graphic file (type png)
 <use img/movimentlocal.png>
 Package pdftex.def Info: img/movimentlocal.png  used on input line 39.
@@ -2074,6 +2065,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 55--56
+[]\OT1/lmr/m/n/12 (+20) Veiem a con-tin-uaci^^So un al-tre ti-pus
  []
 
 
@@ -2092,18 +2088,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-<img/seifertsurface.png, id=225, 531.9875pt x 546.04pt>
+<img/seifertsurface.png, id=222, 531.9875pt x 546.04pt>
 File: img/seifertsurface.png Graphic file (type png)
 <use img/seifertsurface.png>
 Package pdftex.def Info: img/seifertsurface.png  used on input line 71.
 (pdftex.def)             Requested size: 130.57455pt x 134.01842pt.
-<img/trefoilseifert.png, id=226, 209.583pt x 107.80275pt>
+<img/trefoilseifert.png, id=223, 209.583pt x 107.80275pt>
 File: img/trefoilseifert.png Graphic file (type png)
 <use img/trefoilseifert.png>
 Package pdftex.def Info: img/trefoilseifert.png  used on input line 77.
 (pdftex.def)             Requested size: 130.57455pt x 67.16434pt.
 [8 <./img/movimentlocal.png>]
-<img/seifert.png, id=243, 536.0025pt x 243.15843pt>
+<img/seifert.png, id=239, 536.0025pt x 243.15843pt>
 File: img/seifert.png Graphic file (type png)
 <use img/seifert.png>
 Package pdftex.def Info: img/seifert.png  used on input line 93.
@@ -2123,13 +2119,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-<img/cerclesdeseifert.png, id=246, 755.07094pt x 250.68657pt>
+<img/cerclesdeseifert.png, id=242, 755.07094pt x 250.68657pt>
 File: img/cerclesdeseifert.png Graphic file (type png)
 <use img/cerclesdeseifert.png>
 Package pdftex.def Info: img/cerclesdeseifert.png  used on input line 101.
 (pdftex.def)             Requested size: 217.62206pt x 72.2497pt.
 [9 <./img/seifertsurface.png> <./img/trefoilseifert.png> <./img/seifert.png>]
-<img/superficiedeseifert.png, id=259, 288.3272pt x 243.91125pt>
+<img/superficiedeseifert.png, id=256, 288.3272pt x 243.91125pt>
 File: img/superficiedeseifert.png Graphic file (type png)
 <use img/superficiedeseifert.png>
 Package pdftex.def Info: img/superficiedeseifert.png  used on input line 109.
@@ -2161,7 +2157,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-<img/genus.png, id=292, 305.34074pt x 140.32425pt>
+<img/genus.png, id=289, 305.34074pt x 140.32425pt>
 File: img/genus.png Graphic file (type png)
 <use img/genus.png>
 Package pdftex.def Info: img/genus.png  used on input line 214.
@@ -2191,12 +2187,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-<img/polinomidekauffman.png, id=318, 1992.69469pt x 428.35031pt>
+<img/polinomidekauffman.png, id=315, 1992.69469pt x 428.35031pt>
 File: img/polinomidekauffman.png Graphic file (type png)
 <use img/polinomidekauffman.png>
 Package pdftex.def Info: img/polinomidekauffman.png  used on input line 48.
 (pdftex.def)             Requested size: 217.62206pt x 46.7788pt.
-<img/signe.png, id=321, 176.91093pt x 82.05656pt>
+<img/signe.png, id=318, 176.91093pt x 82.05656pt>
 File: img/signe.png Graphic file (type png)
 <use img/signe.png>
 Package pdftex.def Info: img/signe.png  used on input line 66.
@@ -2206,7 +2202,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-<img/torçament.png, id=324, 813.0375pt x 331.83975pt>
+<img/torçament.png, id=321, 813.0375pt x 331.83975pt>
 File: img/torçament.png Graphic file (type png)
 <use img/torçament.png>
 Package pdftex.def Info: img/torçament.png  used on input line 74.
@@ -2250,17 +2246,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-<img/jonestaula.png, id=342, 494.84875pt x 719.68875pt>
+<img/jonestaula.png, id=338, 494.84875pt x 719.68875pt>
 File: img/jonestaula.png Graphic file (type png)
 <use img/jonestaula.png>
 Package pdftex.def Info: img/jonestaula.png  used on input line 96.
 (pdftex.def)             Requested size: 217.62206pt x 316.4993pt.
-
+[14 <./img/jonestaula.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[14 <./img/jonestaula.png>]
+
 Underfull \hbox (badness 1297) in paragraph at lines 103--104
 [][]\OT1/lmr/bx/n/12 (+20) Definici^^So 15. []\OT1/lmr/m/it/12 (+20) Sigui $\OM
 L/lmm/m/it/12 L$ \OT1/lmr/m/it/12 (+20) un link ori-en-
@@ -2271,7 +2267,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-<img/nombredenuament.png, id=354, 539.616pt x 364.36125pt>
+<img/nombredenuament.png, id=351, 539.616pt x 364.36125pt>
 File: img/nombredenuament.png Graphic file (type png)
 <use img/nombredenuament.png>
 Package pdftex.def Info: img/nombredenuament.png  used on input line 110.
@@ -2315,7 +2311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
  []
 
 [15 <./img/nombredenuament.png>]
-<img/mutació.png, id=376, 1151.80313pt x 474.27188pt>
+<img/mutació.png, id=372, 1151.80313pt x 474.27188pt>
 File: img/mutació.png Graphic file (type png)
 <use img/mutació.png>
 Package pdftex.def Info: img/mutació.png  used on input line 158.
@@ -2326,32 +2322,154 @@ Underfull \hbox (badness 3942) in paragraph at lines 159--159
  []
 
 ) (Aplicacions.tex
-Underfull \hbox (badness 1406) in paragraph at lines 5--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+[16 <./img/mutació.png>]
+Underfull \hbox (badness 3417) in paragraph at lines 10--11
+\OT1/lmr/m/n/12 (+20) tracta d'una propi-etat que pre-sen-ten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+<img/aillant topologic.png, id=384, 2654.91875pt x 1987.425pt>
+File: img/aillant topologic.png Graphic file (type png)
+<use img/aillant topologic.png>
+Package pdftex.def Info: img/aillant topologic.png  used on input line 16.
+(pdftex.def)             Requested size: 217.62206pt x 162.87892pt.
+
+Underfull \hbox (badness 1406) in paragraph at lines 20--20
 []\OT1/lmr/bx/n/14.4 (+20) Computaci^^So amb nu-sos
  []
 
 
-Underfull \vbox (badness 3439) has occurred while \output is active []
-
-) [16 <./img/mutació.png>] (main.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 9--14
-[]\OT1/lmr/m/n/12 (+20) Graham P. Collins.  Com-put-ing
+Underfull \hbox (badness 2158) in paragraph at lines 22--23
+\OT1/lmr/m/n/12 (+20) degut a les con-tribu-cions de Ed-ward
  []
 
 
-Underfull \hbox (badness 5696) in paragraph at lines 9--14
-\OT1/lmr/m/n/12 (+20) with Quan-tum Knots.  \OT1/lmr/m/it/12 (+20) Sci-en-tific
+Underfull \hbox (badness 1430) in paragraph at lines 22--23
+\OT1/lmr/m/n/12 (+20) Wit-ten i Alexei Ki-taev en gran part.
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 22--23
+\OT1/lmr/m/n/12 (+20) De fet, tots els m^^Retodes d'encriptaci^^So
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 
-Underfull \hbox (badness 7832) in paragraph at lines 9--14
-\OT1/lmr/m/it/12 (+20) Amer-i-can\OT1/lmr/m/n/12 (+20) , 294(4):56--63, apr 200
-6.
+Underfull \vbox (badness 7740) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 24--25
+\OT1/lmr/m/n/12 (+20) don-ada per Steven Si-mons l'any 2021
  []
 
+
+Underfull \hbox (badness 1635) in paragraph at lines 24--25
+\OT1/lmr/m/n/12 (+20) a l'Advanced Stud-ies Gate-way Cen-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[17 <./img/aillant topologic.png>]
+Underfull \hbox (badness 1377) in paragraph at lines 26--27
+\OT1/lmr/m/n/12 (+20) re-forcen aque-sta di-co-to-mia de man-era
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \vbox (badness 2961) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 32--33
+\OT1/lmr/m/n/12 (+20) en tro-bar maneres de minim-itzar les
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 32--33
+\OT1/lmr/m/n/12 (+20) pro-ced-i-ments de cor-recci^^So d'errors per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 36.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 36.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 36.
+
+Underfull \hbox (badness 3189) in paragraph at lines 36--37
+[]\OT1/lmr/m/n/12 (+20) Un or-di-nador qu^^Rantic topol^^Rogic no
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 36--37
+\OT1/lmr/m/n/12 (+20) com a l^^S^^Pnies del m^^Son, rep-re-senta-cions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \vbox (badness 2961) has occurred while \output is active []
+
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 40--41
+\OT1/lmr/m/n/12 (+20) la com-putaci^^So qu^^Rantica va donar una
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+) [19] (main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-49.
+14.
+
 (C:\Users\guill\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -2360,27 +2478,75 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1062) in paragraph at lines 52--57
+Underfull \hbox (badness 4954) in paragraph at lines 10--15
+\OT1/lmr/m/n/12 (+20) for quan-tum com-pu-ta-tion.  \OT1/lmr/m/it/12 (+20) Phys
+.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
+\OT1/lmr/m/it/12 (+20) Rev. Lett.\OT1/lmr/m/n/12 (+20) , 95:140503, Sep 2005.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
+\OT1/lmr/m/n/12 (+20) doi:[]10.1103/PhysRevLett.95.140503[].
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 10--15
+\OT1/lmr/m/n/12 (+20) URL []$\OT1/lmtt/m/n/12 https : / / link . aps . org / do
+i / 10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+[]\OT1/lmr/m/n/12 (+20) Graham P. Collins.  Com-put-ing
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 17--22
+\OT1/lmr/m/n/12 (+20) with Quan-tum Knots.  \OT1/lmr/m/it/12 (+20) Sci-en-tific
+
+ []
+
+
+Underfull \hbox (badness 7832) in paragraph at lines 17--22
+\OT1/lmr/m/it/12 (+20) Amer-i-can\OT1/lmr/m/n/12 (+20) , 294(4):56--63, apr 200
+6.
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 25--27
+[]\OT1/lmr/m/n/12 (+20) Michael H. Freed-man, Alexei Ki-taev,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--53
+\OT1/lmr/m/n/12 (+20) URL []$\OT1/lmtt/m/n/12 http : / / dx . doi . org / 10 . 
+1103 /
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 74--79
 \OT1/lmr/m/it/12 (+20) a Twist\OT1/lmr/m/n/12 (+20) .  Har-vard Uni-ver-sity Pr
 ess,
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 52--57
+Underfull \hbox (badness 1057) in paragraph at lines 74--79
 \OT1/lmr/m/n/12 (+20) 2002.  ISBN 9780674009448.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--57
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
 []$\OT1/lmtt/m/n/12 https : / / books . google . es / books ? id =
  []
 
-) [17{C:/Users/guill/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.e
-nc}
+) [20
 
-] (9_appendixA.tex) (9_appendixB.tex) [18
-
-] (main.aux)
+{C:/Users/guill/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}] 
+(main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2390,14 +2556,14 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CC73A03FE4BD17750A13F28EF0580FF2;3515.
+(rerunfilecheck)             Checksum: BA387DA41A3603BDBA61A9A2CF6BDFCD;3513.
  ) 
 Here is how much of TeX's memory you used:
- 47734 strings out of 474436
- 1137080 string characters out of 5741954
- 1958190 words of memory out of 5000000
- 68898 multiletter control sequences out of 15000+600000
- 637422 words of font info for 228 fonts, out of 8000000 for 9000
+ 47853 strings out of 474436
+ 1139062 string characters out of 5741954
+ 1957190 words of memory out of 5000000
+ 68970 multiletter control sequences out of 15000+600000
+ 658851 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,15n,389p,1794b,2293s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\guill\AppData\Local\MiKTeX\fonts/pk/ljfour/public/mathabx/dpi600\m
@@ -2416,13 +2582,15 @@ Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/guill/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/guill/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/guill/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/guill/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/guill/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/guill/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/guill/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (18 pages, 5430062 bytes).
+ams/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/guill/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/guill/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/guill/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/guill/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/guill/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (20 pages, 5612168 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 118 named destinations out of 1000 (max. 500000)
- 41770 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 604 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
+ 54055 words of extra memory for PDF output out of 61914 (max. 10000000)
 

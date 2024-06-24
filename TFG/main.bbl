@@ -1,9 +1,17 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bonesteel et~al.(2005)Bonesteel, Hormozi, Zikos, and
+  Simon]{braidtopologiesforquantumcomputation}
+N.~E. Bonesteel, L.~Hormozi, G.~Zikos, and S.~H. Simon.
+\newblock Braid topologies for quantum computation.
+\newblock \emph{Phys. Rev. Lett.}, 95:\penalty0 140503, Sep 2005.
+\newblock \doi{10.1103/PhysRevLett.95.140503}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.95.140503}.
 
 \bibitem[{Collins}(2006)]{computingwithquantumknots}
 Graham~P. {Collins}.
@@ -11,6 +19,11 @@ Graham~P. {Collins}.
 \newblock \emph{Scientific American}, 294\penalty0 (4):\penalty0 56--63, apr
   2006.
 \newblock \doi{10.1038/scientificamerican0406-56}.
+
+\bibitem[Freedman et~al.(2002)Freedman, Kitaev, Larsen, and
+  Wang]{topologicalquantumcomputation}
+Michael~H. Freedman, Alexei Kitaev, Michael~J. Larsen, and Zhenghan Wang.
+\newblock Topological quantum computation, 2002.
 
 \bibitem[Jones(1985)]{jonesoriginal}
 Vaughan F.~R. Jones.
@@ -28,6 +41,15 @@ L~Kauffman and S~Lambropoulou.
 Ben-Michael Kohli and Guillaume Tahar.
 \newblock A lower bound for the genus of a knot using the links-gould
   invariant, 2023.
+
+\bibitem[Qi and Zhang(2011)]{topologicalinsulators}
+Xiao-Liang Qi and Shou-Cheng Zhang.
+\newblock Topological insulators and superconductors.
+\newblock \emph{Reviews of Modern Physics}, 83\penalty0 (4):\penalty0
+  1057–1110, October 2011.
+\newblock ISSN 1539-0756.
+\newblock \doi{10.1103/revmodphys.83.1057}.
+\newblock URL \url{http://dx.doi.org/10.1103/RevModPhys.83.1057}.
 
 \bibitem[Roberts(2015)]{knotknotes}
 Justin Roberts.
