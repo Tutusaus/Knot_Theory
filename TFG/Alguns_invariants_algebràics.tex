@@ -11,7 +11,7 @@ Recordem que un invariant és un objecte ben definit, ja sigui un número, polin
 Com ja podriem haver esperat, l'ordre d'un nus és un exemple d'invariant. Nusos amb diferent ordre no poden ser equivalents. Aquest invariant però és intractable a nivell pràctic pel fet d'haver de considerar el mínim nombre de creuaments donats tots els diagrames d'aquest.\\
 
 \begin{proposition}
-	L'ordre d'un nus és un invariant.
+	L'ordre d'un nus és una propietat topològica.
 \end{proposition}
 
 \begin{proof}
@@ -67,7 +67,7 @@ No es gens evident a partir de la Definició \ref{def:superficiedeseifert} que a
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\linewidth]{img/seifertsurface.png}
-	\caption{Exemple d'una superfície de Seifert per $5_2$.}\label{fig:superficiedeseifert}
+	\caption{Exemple d'una superfície de Seifert per $5_2$. Framed Knots - Scientific Figure on ResearchGate.}\label{fig:superficiedeseifert}
 \end{figure}
 
 \begin{figure}
@@ -100,7 +100,7 @@ En la demostració del Teorema \ref{theo:existenciadesuperficiesdeseifert}, $\wi
 	\caption{Exemple amb la construcció de $\widehat{diag(3_1)}$ a partir d'un diagrama de $3_1$ qualsevol.}\label{fig:cerclesdeseifert}
 \end{figure}
 
-Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'aconsegueix superposant les dues corbes disjuntes una a sobre l'altra i unir-les mitjançant tres bandes amb una mitja volta cadascuna en els creuaments. Evidentment, aquest algorisme dona lloc a una superfície de Seifert. Donat un diagrama qualsevol de $L$ però, aquesta no té perquè ser única. Tampoc té perquè ser la més senzilla donat un diagrama qualsevol.
+Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'aconsegueix superposant els dos cercles de Seifert disjunts un a sobre l'altra i unint-los mitjançant tres bandes amb una mitja volta cadascuna en els creuaments. Evidentment, com hem vist a la demostració aquest algorisme dona lloc a una superfície de Seifert. Donat un diagrama qualsevol de $L$ però, aquesta no té perquè ser única. Tampoc té perquè ser la més senzilla donat un diagrama qualsevol.
 
 \begin{figure}
 	\centering
@@ -109,11 +109,11 @@ Una superfície de Seifert per la Figura \ref{fig:cerclesdeseifert} s'aconseguei
 \end{figure}
 
 \begin{definition}\label{def:genere}
-	El \underline{gènere} $g(K)$ d'un nus $K$ es defineix com $$g(K)=\min\{g(S)| \text{S superfície de Seifert de K}\}$$ Direm que una superfície de Seifert $S$ amb $K$ com a frontera és \textit{minimal} si $g(S)=g(K)$.
+	El \underline{gènere} $g(K)$ d'un nus $K$ es defineix com $$g(K)=\min\{g(S)| \text{S superfície de S. de K}\}$$ Direm que una superfície de Seifert $S$ amb $K$ com a frontera és \textit{minimal} si $g(S)=g(K)$.
 \end{definition}
 
 \begin{proposition}
-	El gènere d'un nus és invariant.
+	El gènere d'un nus és una propietat topològica.
 \end{proposition}
 
 \begin{proof}
@@ -144,7 +144,7 @@ Aquest invariant té un millor tractament que els vistos anteriorment. Donem ara
 	Si $K$ és el nus trivial, llavors un disc amb frontera $K$ és clarament una superfície de Seifert minimal amb $K$ per frontera. I com que un disc és una esfera amb un component de frontera deduïm que $g(K)=g(S^2)=0$. Alternativament, si $K$ és tal que $g(K)=0$, llavors existeix una superfície de Seifert minimal $S$ amb $g(S)=0$, d'aquesta manera $S$ és una esfera amb una component per frontera, i.e. un disc.
 \end{proof}
 
-Seguint amb l'exemple del nus $3_1$, llavors es veu clarament que $g(3_1)=1$. Per tant, ja sabem que $3_1\neq\ovoid$. De manera similar un pot arribar a calcular els gèneres d'un gran nombre de nusos. El problema amb aquest mètode és que l'Equació \ref{eq:cotasuperiorgenere} dona una cota superior per aquest gènere i per tant, a mesura que incrementem el nombre de creuaments és possible que el gènere pugui prendre un nombre finit de valor diferents entre ells. Per exemple, un exercici senzill demostra que $g(8_{20})\leq2$ i doncs pot ser 1 o bé 2.
+Seguint amb l'exemple del nus $3_1$, llavors es veu clarament que $g(3_1)=1$. Per tant, deduïm que $3_1\neq\ovoid$. De manera similar un pot arribar a calcular els gèneres d'un gran nombre de nusos. El problema amb aquest mètode és que l'Equació \ref{eq:cotasuperiorgenere} dona una cota superior per aquest gènere i per tant, a mesura que incrementem el nombre de creuaments és possible que el gènere pugui prendre un nombre finit de valors diferents entre ells. Per exemple, un exercici senzill demostra que $g(8_{20})\leq2$ i doncs pot ser 1 o bé 2.
 
 \subsubsection{Additivitat i aplicacions}
 
@@ -153,7 +153,7 @@ Seguint amb l'exemple del nus $3_1$, llavors es veu clarament que $g(3_1)=1$. Pe
 \end{theorem}
 
 \begin{proof}
-	Comencem veient $g(K+K')\leq g(K)+g(K')$. Considerem que $K$ i $K'$ estan separats per un pla i considerem les superfícies de Seifert minimals de tots dos nusos $S$ i $S'$ ($S$ i $S'$ també estan separades pel pla). Donem una orientació a $K$ i $K'$ i considerem la seva suma assegurant-nos que $K+K'$ no intersecti $Int(S)$ ni $Int(S')$. Considerem ara una banda $B$ que conecta $K$ i $K'$ que té per frontera els dos segments de corda introduïts al considerar la suma $K+K'$ i de tal manera que $B$ no intersecta $Int(S)$ ni $Int(S')$. D'aquesta manera, $B$ conecta $S$ i $S'$ i doncs $C=S\cup S'\cup B$ és una superfície de Seifert per $K+K'$. Finalment com $g(C)=g(S)+g(S')=g(K)+g(K')$ tenim $g(K+K')\leq g(K)+g(K')$. L'altre desigualtat es pot trobar a AAAAAAAAAAAAAAAAAAAAAA
+	Comencem veient $g(K+K')\leq g(K)+g(K')$. Considerem que $K$ i $K'$ estan separats per un pla i considerem les superfícies de Seifert minimals de tots dos nusos $S$ i $S'$ ($S$ i $S'$ també estan separades pel pla). Donem una orientació a $K$ i $K'$ i considerem la seva suma assegurant-nos que $K+K'$ no intersecti $Int(S)$ ni $Int(S')$. Considerem ara una banda $B$ que conecta $K$ i $K'$ que té per frontera els dos segments de corda introduïts al considerar la suma $K+K'$ i de tal manera que $B$ no intersecta $Int(S)$ ni $Int(S')$. D'aquesta manera, $B$ conecta $S$ i $S'$ i doncs $C=S\cup S'\cup B$ és una superfície de Seifert per $K+K'$. Finalment com $g(C)=g(S)+g(S')=g(K)+g(K')$ tenim $g(K+K')\leq g(K)+g(K')$. L'altre desigualtat es pot trobar a \cite{rolfsen2003knots}.
 \end{proof}
 
 A partir del Teorema \ref{teo:sumabilitatdelgenere} obtenim un seguit de resultats:
@@ -203,7 +203,7 @@ A partir del Teorema \ref{teo:sumabilitatdelgenere} obtenim un seguit de resulta
 	Sigui $K$ un nus qualsevol, com que el nombre de cercles de Seifert sempre serà com a mínim $1$, utilitzant l'Equació \ref{eq:cotasuperiorgenere} tenim $$g(K)\leq \frac{n}{2}$$ on $n$ és el nombre de creuaments del diagrama de $K$. Considerem ara un nus no trivial i $K_m=\sum^{m}K$ la suma de $m$ còpies de $K$. Llavors, $$m\leq g(K_m)\leq \frac{c(K_m)}{2}$$ on $c(K_m)$ és el nombre de creuaments de la suprfície de Seifert de $K_m$. A mesura que $m$ s'acosta a infinit, també ho fa $c(K_m)$.
 \end{proof}
 
-Cal remarcar que existeixen cotes inferiors pel gènere d'un nus qualsevol [\cite{lowerbound}] i que hi ha classes de nusos amb molt bones propietats pel que fa el seu gènere. Nosaltres però al no fer-nos falta, ens limitarem a fer-ne menció i classificarem els nusos d'ordre més baix utilitzant només els resultats vistos.\\
+Cal remarcar que existeixen cotes inferiors pel gènere d'un nus qualsevol [\cite{lowerbound}] i que hi ha classes de nusos amb molt bones propietats pel que fa el seu gènere. Nosaltres però, ens limitarem a fer-ne menció i classificarem els nusos d'ordre més baix utilitzant només els resultats vistos.\\
 
 La Figura \ref{fig:genus} mostra una taula per al gènere d'un nus primer de fins a $7$ creuaments.
 
